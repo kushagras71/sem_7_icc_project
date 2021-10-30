@@ -39,7 +39,7 @@ def encrypt(filename, directory, public_key, private_key):
     # file_obj.write('\n')
     # file_obj.write(msg2)
     # os.remove(filename)
-    os.system("xdg-open " + directory)
+    # os.system("xdg-open " + directory)
 
 
 """
@@ -69,8 +69,8 @@ def decrypt(filename, directory, public_key, private_key):
     outputFilename = os.path.join(directory, "DecodedFile.txt")
     file_obj = open(outputFilename, "w")
     file_obj.write(text)
-    os.remove(filename)
-    os.system("xdg-open " + directory)
+    # os.remove(filename)
+    # os.system("xdg-open " + directory)
 
 
 """
